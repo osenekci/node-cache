@@ -1,0 +1,33 @@
+{
+  "name": "node-cache-lc",
+  "version": "1.0.0",
+  "description": "fast cache",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osenekci/node-cache.git"
+  },
+  "keywords": [
+    "node",
+    "cache",
+    "simple",
+    "fast",
+    "lru"
+  ],
+  "author": "ozgursenekci@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osenekci/node-cache/issues"
+  },
+  "homepage": "https://github.com/osenekci/node-cache#readme",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "yallist": "^4.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  }
+}
