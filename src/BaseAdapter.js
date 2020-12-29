@@ -8,7 +8,7 @@ class BaseAdapter {
    * @return {*}
    */
   get(key, def) {
-    throw new Error('Method is not declared.');
+    throw new Error('Not implemented.');
   }
 
   /**
@@ -18,7 +18,7 @@ class BaseAdapter {
    * @return {boolean}
    */
   put(key, data, maxAge) {
-    throw new Error('Method is not declared.');
+    throw new Error('Not implemented.');
   }
 
   /**
@@ -26,7 +26,7 @@ class BaseAdapter {
    * @return {boolean}
    */
   has(key) {
-    throw new Error('Method is not declared.');
+    throw new Error('Not implemented.');
   }
 
   /**
@@ -34,15 +34,21 @@ class BaseAdapter {
    * @return {boolean}
    */
   remove(key) {
-    throw new Error('Method is not declared.');
+    throw new Error('Not implemented.');
   }
 
   /**
-   * Clear cache
    * @return {boolean}
    */
-  clear() {
-    throw new Error('Method is not declared.');
+  init() {
+    throw new Error('Not implemented.');
+  }
+
+  /**
+   * @return {boolean}
+   */
+  destroy() {
+    throw new Error('Not implemented.');
   }
 }
 

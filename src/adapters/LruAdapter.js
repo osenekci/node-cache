@@ -147,9 +147,18 @@ class LruAdapter extends BaseAdapter {
   }
 
   /**
-   * Clear cache
+   * @override
+   * @return {boolean}
    */
-  clear() {
+  init() {
+    return true;
+  }
+
+  /**
+   * @override
+   * @return {boolean}
+   */
+  destroy() {
     for (let key in this._store) {
       if (this._store.hasOwnProperty(key)) {
         this.remove(key);

@@ -90,13 +90,13 @@ describe('LruAdapter', function() {
     });
   });
 
-  describe('#clear()', function() {
+  describe('#destroy()', function() {
     const adapter = new LruAdapter();
     adapter.put('str', 'aa');
     adapter.put('num', 4);
     it('should empty everything', function() {
       assert.strictEqual(Object.keys(adapter._store).length, 2);
-      assert.strictEqual(adapter.clear(), true);
+      assert.strictEqual(adapter.destroy(), true);
       assert.strictEqual(Object.keys(adapter._store).length, 0);
     });
   });
