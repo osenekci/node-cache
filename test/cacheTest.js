@@ -11,6 +11,4 @@ describe('Cache', function() {
       assert.strictEqual(cache._adapter instanceof LruAdapter, true);
     });
   });
-
-
 });

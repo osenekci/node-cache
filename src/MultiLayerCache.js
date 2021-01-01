@@ -7,7 +7,7 @@ class MultiLayerCache {
   /**
    * @param {Array.<{
    *   adapter:string,
-   *   adapterOptions:Object
+   *   adapterOptions:?Object
    * }>} options
    */
   constructor(options) {
@@ -75,8 +75,9 @@ class MultiLayerCache {
   destroy() {
     let success = true;
     for (let i = 0; i < this._adapterStack.length; i++) {
-      success = success && this._adapterStack[i].destroy(key);
+      success = success && this._adapterStack[i].destroy();
     }
+    this._adapterStack = [];
     return success;
   }
 }
